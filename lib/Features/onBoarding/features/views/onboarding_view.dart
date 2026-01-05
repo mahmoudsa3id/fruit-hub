@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/Features/onBoarding/features/views/widgets/onboarding_view_body.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingView extends StatelessWidget {
@@ -6,6 +7,6 @@ class OnboardingView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Scaffold(body: OnboardingViewBody());
   }
 }
