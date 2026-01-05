@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/Features/onBoarding/features/views/widgets/onboarding_body_page_view.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingViewBody extends StatelessWidget {
@@ -5,6 +6,6 @@ class OnboardingViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: []);
+    return Column(children: [Expanded(child: const OnboardingBodyPageView())]);
   }
 }
