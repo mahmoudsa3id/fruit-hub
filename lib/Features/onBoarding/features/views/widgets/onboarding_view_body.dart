@@ -2,6 +2,7 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:ecommerce_app/Features/auth/presentation/views/login_view.dart';
 import 'package:ecommerce_app/Features/onBoarding/features/views/widgets/onboarding_body_page_view.dart';
 import 'package:ecommerce_app/constant.dart';
+import 'package:ecommerce_app/core/services/shared_pref_singelton.dart';
 import 'package:ecommerce_app/core/utils/app_colors.dart';
 import 'package:ecommerce_app/core/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
@@ -60,6 +61,7 @@ class _OnboardingViewBodyState extends State<OnboardingViewBody> {
             child: CustomButton(
               text: 'إبدا الأن',
               onPressed: () {
+                SharedPreferencesSingleton.setBool(kOnBoardingSeen, true);
                 Navigator.pushReplacementNamed(context, LoginView.routeName);
               },
             ),
