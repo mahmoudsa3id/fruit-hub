@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/Features/auth/presentation/views/login_view.dart';
 import 'package:ecommerce_app/core/utils/app_colors.dart';
 import 'package:ecommerce_app/core/utils/app_images.dart';
 import 'package:ecommerce_app/core/utils/app_text_styles.dart';
@@ -39,10 +40,18 @@ class PageViewItem extends StatelessWidget {
                 visible: isVisible,
                 child: Padding(
                   padding: EdgeInsets.all(16.0),
-                  child: Text(
-                    'تخط',
-                    style: AppTextStyles.regular13.copyWith(
-                      color: AppColors.fourthColor,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pushReplacementNamed(
+                        context,
+                        LoginView.routeName,
+                      );
+                    },
+                    child: Text(
+                      'تخط',
+                      style: AppTextStyles.regular13.copyWith(
+                        color: AppColors.fourthColor,
+                      ),
                     ),
                   ),
                 ),
