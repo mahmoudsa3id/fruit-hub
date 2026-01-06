@@ -13,9 +13,9 @@ class OnboardingBodyPageView extends StatelessWidget {
       controller: pageController,
       children: [
         PageViewItem(
-          isVisible:
-              (pageController.hasClients ? pageController.page!.round() : 0) ==
-              0,
+          isVisible: true,
+          // (pageController.hasClients ? pageController.page!.round() : 0) ==
+          // 0,
           image: Assets.imagesPageViewItem1Image,
           subtitle:
               'اكتشف تجربة تسوق فريدة مع FruitHUB. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية.',
@@ -46,9 +46,9 @@ class OnboardingBodyPageView extends StatelessWidget {
           backgroundImage: Assets.imagesPageViewItem2Backgroundimage,
           title: Text('ابحث وتسوق', style: AppTextStyles.bold23),
 
-          isVisible:
-              (pageController.hasClients ? pageController.page!.round() : 0) !=
-              1,
+          isVisible: false,
+          // (pageController.hasClients ? pageController.page!.round() : 0) !=
+          // 1,
         ),
       ],
     );
