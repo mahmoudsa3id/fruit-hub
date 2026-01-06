@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/core/utils/app_colors.dart';
+import 'package:ecommerce_app/core/utils/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
@@ -8,6 +9,7 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
+      height: 54,
       width: double.infinity,
       child: TextButton(
         style: TextButton.styleFrom(
@@ -17,7 +19,10 @@ class CustomButton extends StatelessWidget {
           ),
         ),
         onPressed: onPressed,
-        child: Text(text, style: const TextStyle(color: Colors.white)),
+        child: Text(
+          text,
+          style: AppTextStyles.bold16.copyWith(color: Colors.white),
+        ),
       ),
     );
   }

@@ -14,6 +14,7 @@ class FruitApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: 'cairo'),
       debugShowCheckedModeBanner: false,
       localizationsDelegates: [
         S.delegate,
