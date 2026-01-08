@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/Features/Splash/presentation/views/splash_view.dart';
 import 'package:ecommerce_app/core/helper_function/on_generate_route.dart';
 import 'package:ecommerce_app/core/services/shared_pref_singelton.dart';
+import 'package:ecommerce_app/core/utils/app_colors.dart';
 import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -18,7 +19,11 @@ class FruitApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'cairo'),
+      theme: ThemeData(
+        fontFamily: 'cairo',
+        colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryColor),
+      ),
+
       debugShowCheckedModeBanner: false,
       localizationsDelegates: [
         S.delegate,
