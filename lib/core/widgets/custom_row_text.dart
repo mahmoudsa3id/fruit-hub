@@ -7,9 +7,11 @@ class CustomRowText extends StatelessWidget {
     super.key,
     required this.fristText,
     required this.lastText,
+    this.onTap,
   });
   final String fristText;
   final String lastText;
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -19,10 +21,13 @@ class CustomRowText extends StatelessWidget {
           fristText,
           style: AppTextStyles.semiBold16.copyWith(color: AppColors.fifthColor),
         ),
-        Text(
-          lastText,
-          style: AppTextStyles.semiBold16.copyWith(
-            color: AppColors.primaryColor,
+        GestureDetector(
+          onTap: onTap,
+          child: Text(
+            lastText,
+            style: AppTextStyles.semiBold16.copyWith(
+              color: AppColors.primaryColor,
+            ),
           ),
         ),
       ],

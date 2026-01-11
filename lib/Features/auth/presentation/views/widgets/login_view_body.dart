@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/Features/auth/presentation/views/sign_up_view.dart';
 import 'package:ecommerce_app/Features/auth/presentation/views/widgets/custom_text_button_auth.dart';
 import 'package:ecommerce_app/Features/auth/presentation/views/widgets/or_divider.dart';
 import 'package:ecommerce_app/core/utils/app_colors.dart';
@@ -48,8 +49,11 @@ class LoginViewBody extends StatelessWidget {
             CustomButton(text: 'تسجيل دخول', onPressed: () {}),
             SizedBox(height: 33),
             CustomRowText(
-              fristText: ' ليس لديك حساب؟',
-              lastText: ' قم بإنشاء حساب',
+              fristText: 'ليس لديك حساب؟',
+              lastText: 'قم بإنشاء حساب',
+              onTap: () {
+                Navigator.pushNamed(context, SignUpView.routeName);
+              },
             ),
             SizedBox(height: 33),
             OrDivider(),
