@@ -1,9 +1,11 @@
+import 'package:ecommerce_app/Features/auth/presentation/cubits/cubit/sign_up_cubit.dart';
 import 'package:ecommerce_app/Features/auth/presentation/views/login_view.dart';
 import 'package:ecommerce_app/Features/auth/presentation/views/widgets/terms_and_condition.dart';
 import 'package:ecommerce_app/core/widgets/custom_button.dart';
 import 'package:ecommerce_app/core/widgets/custom_row_text.dart';
 import 'package:ecommerce_app/core/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SignUpViewBody extends StatelessWidget {
   const SignUpViewBody({super.key});
@@ -37,7 +39,9 @@ class SignUpViewBody extends StatelessWidget {
             SizedBox(height: 16),
             TermsAndCondition(),
             SizedBox(height: 43),
-            CustomButton(text: ' انشاء حساب جديد', onPressed: () {}),
+            CustomButton(text: ' انشاء حساب جديد', onPressed: () {
+             
+            }),
             SizedBox(height: 26),
             CustomRowText(
               fristText: 'تمتلك حساب بالفعل؟',

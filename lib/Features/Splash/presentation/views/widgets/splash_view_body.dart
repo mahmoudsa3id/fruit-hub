@@ -19,6 +19,10 @@ class _SplashViewBodyState extends State<SplashViewBody> {
     super.initState();
     executeNavigation();
   }
+  @override
+  dispose() {
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {

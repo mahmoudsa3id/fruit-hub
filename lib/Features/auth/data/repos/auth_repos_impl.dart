@@ -33,7 +33,6 @@ class AuthReposImpl extends AuthRepo {
     required String email,
     required String password,
   }) {
-    // TODO: implement loginEmailAndPassword
     throw UnimplementedError();
   }
 }

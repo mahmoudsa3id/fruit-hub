@@ -1,5 +1,4 @@
 import 'package:ecommerce_app/core/errors/custom_exeption.dart';
-import 'package:ecommerce_app/generated/intl/messages_ar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class FirebaseAuthService {
