@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/Features/Splash/presentation/views/splash_view.dart';
 import 'package:ecommerce_app/Features/auth/domain/repos/auth_repo.dart';
-import 'package:ecommerce_app/Features/auth/presentation/cubits/cubit/sign_up_cubit.dart';
+import 'package:ecommerce_app/Features/auth/presentation/cubits/sign_up_cubit/sign_up_cubit.dart';
 import 'package:ecommerce_app/Features/auth/presentation/views/login_view.dart';
 import 'package:ecommerce_app/Features/auth/presentation/views/sign_up_view.dart';
 import 'package:ecommerce_app/Features/onBoarding/features/views/onboarding_view.dart';

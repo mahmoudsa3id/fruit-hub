@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/Features/auth/presentation/cubits/cubit/sign_up_cubit.dart';
+import 'package:ecommerce_app/Features/auth/presentation/cubits/sign_up_cubit/sign_up_cubit.dart';
 import 'package:ecommerce_app/Features/auth/presentation/views/widgets/sign_up_view_body.dart';
 import 'package:ecommerce_app/core/widgets/custom_appBar.dart';
 import 'package:flutter/material.dart';
@@ -14,13 +14,12 @@ class SignUpView extends StatelessWidget {
       body: Builder(
         builder: (context) {
           return BlocConsumer<SignUpCubit, SignUpState>(
-            listener: (context, state) {
-            },
+            listener: (context, state) {},
             builder: (context, state) {
               return SignUpViewBody();
             },
           );
-        }
+        },
       ),
     );
   }

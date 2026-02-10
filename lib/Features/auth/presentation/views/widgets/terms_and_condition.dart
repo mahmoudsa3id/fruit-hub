@@ -1,5 +1,4 @@
 import 'package:ecommerce_app/Features/auth/presentation/views/widgets/custom_check_box.dart';
-import 'package:ecommerce_app/constant.dart';
 import 'package:ecommerce_app/core/utils/app_colors.dart';
 import 'package:ecommerce_app/core/utils/app_text_styles.dart';
 import 'package:flutter/material.dart';
